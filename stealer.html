@@ -1,0 +1,14 @@
+<script>
+    function process()
+    {
+        var value = document.getElementById("url").value;
+        var url = "https://api.brick-hill.com/v1/games/retrieveAsset?id=" + value + "&type=png"
+        location.href = url;
+        return false;
+    }
+</script>
+
+<form onSubmit="return process();">
+   <b style="color:red">Insert the Asset ID in the text box here<b>: <input type="text" name="url" id="url">
+    <input type="submit" value="go">
+</form>
